@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Galada&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
     --primarycolor: #FF902A;
     --secondarycolor: #2F2105;
@@ -47,14 +49,20 @@ body {
 .hero-content h1 {
     font-size: var(--heading-h1-font-size);
     color: var(--secondarycolor);
+    font-weight: 800;
+    line-height: 120%;
 }
 
 .hero-content p {
     font-size: var(--heading-h5-font-size);
+    margin-top: 15px;
 }
 
 .highlight {
     color: var(--primarycolor);
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+    padding-top: 5px;
 }
 
 .hero-buttons {
