@@ -1,4 +1,4 @@
-# La Cuisine Cafe
+# La Cuisine Espresso and Dessert Bar
 
 La Cuisine Cafe is a React-based website designed to showcase the unique offerings of a cafe, featuring an elegant design with a focus on user experience. Visitors can explore the cafe's menu, learn about its services, and easily find its location. 
 
