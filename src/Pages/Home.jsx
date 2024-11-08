@@ -6,10 +6,14 @@ import Feature from '../components/Feature';
 import Testimonial from '../components/Testimonial';
 import  Fotter from '../components/Footer';
 import Location from '../components/Location';
+import Navbar from '../components/Navbar';
+import TopHeader from '../components/TopHeader';
 function Home() {
   return (
     <div className='hompage'> 
       <div>
+        <TopHeader/>
+        <Navbar/>
         <Herosecton/>
       </div>
       <div className=' specialities-section'>

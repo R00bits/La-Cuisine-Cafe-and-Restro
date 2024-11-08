@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Galada&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
     --primarycolor: #FF902A;
     --secondarycolor: #2F2105;
@@ -45,16 +47,22 @@ body {
 }
 
 .hero-content h1 {
-    font-size: var(--heading-h1-font-size);
+    
     color: var(--secondarycolor);
+    font-weight: 800;
+    line-height: 120%;
 }
 
 .hero-content p {
     font-size: var(--heading-h5-font-size);
+    margin-top: 15px;
 }
 
 .highlight {
+    background-color: var(--secondarycolor);
     color: var(--primarycolor);
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
 }
 
 .hero-buttons {
@@ -105,7 +113,35 @@ body {
     height: 45vh;
     z-index: -1; 
 }
-
+.text-hover-effect {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  .text-hover-effect::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+    z-index: 3;
+  }
+  
+  .text-hover-effect:hover::before {
+    transform: translateX(100%);
+  }
+  
+  .text-hover-effect span {
+    position: relative;
+    z-index: 2;
+  }
+  
+  
 @media (max-width: 1024px) {
     .hero-container {
         height: 90%;
