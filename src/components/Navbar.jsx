@@ -10,19 +10,15 @@ function Navbar() {
 const toggleMenu = () => {
 setIsOpen(!isOpen);  
 };
-const log=()=>{
-console.log("clicked");
-}
+
 
 return (
 <div>   
     <nav>
     <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <img src={Lacoffelogo} className="Cusinelogo" alt="La Cuisine Logo"/>
-        <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse vistusbtndiv">
-        <div className="vistbtnchildiv">
-            <button type="button" onClick={log} className=" focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center Visitusbtn">Visit us</button>
-        </div>
+        <div className="flex md:order-1 space-x-3 md:space-x-0 rtl:space-x-reverse vistusbtndiv">
+        
         <button
             onClick={toggleMenu}  // Attach toggle function to button
             type="button"
@@ -36,8 +32,8 @@ return (
             </svg>
         </button>
         </div>
-        <div className={`items-center justify-between ${isOpen ? 'block' : 'hidden'} w-full md:flex md:w-auto md:order-1`} id="navbar-sticky">
-        <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+        <div className={`items-center justify-between ${isOpen ? 'block' : 'hidden'} w-full md:flex md:w-auto md:order-2`} id="navbar-sticky">
+        <ul className="flex flex-col p-4 md:p-0 mt-4 text-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
             <li>
             <Link to="/" >Home</Link>
             </li>
@@ -55,6 +51,7 @@ return (
             </li>
         </ul>
         </div>
+        
     </div>
     </nav>
 </div>

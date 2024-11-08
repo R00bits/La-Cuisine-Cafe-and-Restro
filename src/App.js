@@ -7,13 +7,13 @@ import Menu from  './Pages/Menu'
 import Catering from './Pages/Catering';
 import Kitchen from './Pages/Kitchen';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';  // Adjusted for version 6
-import Navbar from './components/Navbar';
+
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar />
+        
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About />} />
