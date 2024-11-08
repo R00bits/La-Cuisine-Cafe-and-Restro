@@ -22,7 +22,9 @@ nav{
     position: relative;
   }
   ul li{
-    font-weight: normal;
+    font-weight: 600;
+    color: var(--secondarycolor);
+    
   }
   ul li:hover{
     color: var(--primarycolor);
