@@ -13,8 +13,9 @@ function Home() {
   return (
     <div className='hompage'> 
       <div>
+      <div className="mainHead bg-fixed bg-center bg-auto bg-no-repeat bg-blend-lighten bg-white bg-opacity-90">
         <TopHeader/>
-        <div className="mainHead bg-fixed bg-center bg-auto bg-no-repeat bg-blend-lighten bg-white bg-opacity-90">
+        
         <Navbar/>
         <Herosecton/>
         </div>

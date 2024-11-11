@@ -16,9 +16,11 @@ return (
 <div>   
     <nav>
     <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <img src={Lacoffelogo} className="Cusinelogo" alt="La Cuisine Logo" data-aos="slide-right"/>
-        <div className="flex md:order-1 space-x-3 md:space-x-0 rtl:space-x-reverse vistusbtndiv">
+    
+       <a href='/' className='w-[10%]'><img src={Lacoffelogo} alt="La Cuisine Logo" data-aos="fade-right"/></a>
         
+        <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse" data-aos="fade-left">
+            <Link to="tel://+61411678158" className='callBtn'>Call Us</Link>
         <button
             onClick={toggleMenu}  // Attach toggle function to button
             type="button"
@@ -32,7 +34,7 @@ return (
             </svg>
         </button>
         </div>
-        <div className={`items-center justify-between ${isOpen ? 'block' : 'hidden'} w-full md:flex md:w-auto md:order-2`} id="navbar-sticky">
+        <div className={`items-center justify-between ${isOpen ? 'block' : 'hidden'} w-full md:flex md:w-auto md:order-1`} id="navbar-sticky">
         <ul className="flex flex-col p-4 md:p-0 mt-4 text-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
             <li data-aos="fade-left">
             <Link to="/" >Home</Link>

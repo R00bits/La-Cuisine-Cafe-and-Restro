@@ -20,20 +20,20 @@ nav{
     z-index: 10;
     position: relative;
   }
-  ul li{
+  nav ul li{
     font-weight: 600;
     color: var(--secondarycolor);
     
   }
-  ul li:hover{
+  nav ul li:hover{
     color: var(--primarycolor);
   }
 
-  ul li a{
+  nav ul li a{
     position: relative;
     padding-bottom: 5px;
   }
-  ul li a::after{
+  nav ul li a::after{
     content: '';
     position: absolute;
     left: 0;
@@ -45,13 +45,28 @@ nav{
     transition-duration: 300ms;
     transform: scaleX(0);
   }
-  ul li a:hover::after{
+  nav ul li a:hover::after{
     transform-origin: left;
     transform: scaleX(1);
   }
-  .Cusinelogo{
-    width:10%;
-  
+
+  .callBtn{
+    width: 140px;
+    height: 45px;
+    border: 2px solid var(--secondarycolor);
+    background-color: rgba(255, 144, 42);
+    text-align: center;
+    font-weight: 600;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s all ease-in;
+  }
+
+  .callBtn:hover{
+    background-color: var(--secondarycolor);
+    color: var(--primarycolor);
   }
   
   @media (max-width: 700px) {
