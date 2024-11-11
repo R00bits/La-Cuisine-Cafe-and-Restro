@@ -6,7 +6,7 @@ function Herosection3(props) {
     <div className="catering-main">
       <div className="catering-container">
         <div className="catering-content">
-          <h1>{props.heading}<span className="highlight">{props.span}</span>{props.heading2}</h1>
+          <h1 className='text5xl h1' data-aos="fade-up" data-aos-delay="200">{props.heading}<span className="highlight text-hover-effect">{props.span}</span>{props.heading2}</h1>
           <p>{props.description}</p>
         </div>
         <div className="catering-image-grid">

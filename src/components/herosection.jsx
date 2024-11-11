@@ -12,7 +12,7 @@ function HeroSection() {
     <div className="heromain">
       <div className="hero-container">
       <div className="hero-content">
-        <h1 className='text-5xl' data-aos="fade-up">Sip, Savor, Smile</h1><div className="text-hover-effect"><h1 className='text-6xl' data-aos="fade-up" data-aos-delay="200"><span className="highlight">Delicious Moments</span></h1></div> <br></br> 
+        <h1 className='text-5xl h1' data-aos="fade-up">Sip, Savor, Smile</h1><div className="text-hover-effect"><h1 className='text-6xl' data-aos="fade-up" data-aos-delay="200"><span className="highlight">Delicious Moments</span></h1></div> <br></br> 
         
         <h1 className="-mt-2 text-5xl" data-aos="fade-up" data-aos-delay="400">Every Day</h1>
         <p data-aos="fade-up" data-aos-delay="600" data-aos-offset="10">Welcome to La Cuisine Cafe, where every sip and bite is crafted with love.</p>

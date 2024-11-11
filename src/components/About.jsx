@@ -14,7 +14,7 @@ function About() {
         <div className="bgimg"/>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 relative z-10 p-4">
             <div className="text-center md:text-left heromaintext">
-                <h2>
+                <h2 className='h2'>
                     Discover the Art of Taste at <br/>
                     <span>La Cuisine Cafe</span>
                 </h2>
