@@ -8,13 +8,16 @@ import  Fotter from '../components/Footer';
 import Location from '../components/Location';
 import Navbar from '../components/Navbar';
 import TopHeader from '../components/TopHeader';
+import '../Css/herosection.css'; 
 function Home() {
   return (
     <div className='hompage'> 
-      <div>
+      <div className='h-[100vh]'>
         <TopHeader/>
+        <div className="mainHead bg-fixed bg-center bg-auto bg-no-repeat bg-blend-lighten bg-white bg-opacity-90">
         <Navbar/>
         <Herosecton/>
+        </div>
       </div>
       <div className=' specialities-section'>
         <Spealities/>

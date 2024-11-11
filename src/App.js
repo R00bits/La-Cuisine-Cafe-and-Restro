@@ -1,15 +1,22 @@
 import './App.css';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import * as icon from '@fortawesome/free-solid-svg-icons';
+import React, { useEffect } from "react";
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Menu from  './Pages/Menu'
 import Catering from './Pages/Catering';
 import Kitchen from './Pages/Kitchen';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';  // Adjusted for version 6
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <div className="App">
       <BrowserRouter>

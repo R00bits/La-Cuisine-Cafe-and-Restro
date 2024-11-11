@@ -15,9 +15,8 @@
 
 }
 
-
 nav{
-    background-color: var(--Background-1);
+    
     z-index: 10;
     position: relative;
   }
@@ -29,21 +28,6 @@ nav{
   ul li:hover{
     color: var(--primarycolor);
   
-  }
-  
-  .Visitusbtn{
-    background-color: var(--primarycolor);
-    color: var(--secondarycolor);
-    padding: 10px 20px;
-    border-radius:10px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-weight: normal;
-  }
-  .Visitusbtn:hover{
-    background-color: var(--secondarycolor);
-    color: var(--primarycolor);
   }
   .Cusinelogo{
     width:10%;
