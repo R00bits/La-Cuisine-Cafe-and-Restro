@@ -17,11 +17,6 @@
 
 }
 
-body {
-    overflow-x: hidden;
-    margin: 0;
-}
-
 .mainHead{
     background-image: url(../Images/coffeeSplash.png);
 }
@@ -38,7 +33,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0 10%;
-    height: 60vh;
+    padding-bottom: 3%;
     position: relative;
     z-index: 2; /* Ensure the container is above other elements */
 }
