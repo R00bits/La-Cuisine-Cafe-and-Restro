@@ -20,20 +20,20 @@ nav{
     z-index: 10;
     position: relative;
   }
-  nav ul li{
+   ul li{
     font-weight: 600;
     color: var(--secondarycolor);
     
   }
-  nav ul li:hover{
+ul li:hover{
     color: var(--primarycolor);
   }
 
-  nav ul li a{
+  ul li a{
     position: relative;
     padding-bottom: 5px;
   }
-  nav ul li a::after{
+  ul li a::after{
     content: '';
     position: absolute;
     left: 0;
@@ -45,7 +45,7 @@ nav{
     transition-duration: 300ms;
     transform: scaleX(0);
   }
-  nav ul li a:hover::after{
+  ul li a:hover::after{
     transform-origin: left;
     transform: scaleX(1);
   }

@@ -29,7 +29,7 @@ function HerosectionA(props) {
       <div className="container mx-auto p-3">
         <div className={`textgap grid gap-12 ${!isMobile && props.showimage ? 'grid-cols-2' : 'grid-cols-1'}`}>
           <div className='herotext'>
-            <h1>{props.heading} <span>{props.span}</span></h1>
+            <h1 className="h1" data-aos="fade-up" data-aos-delay="200">{props.heading} <span className='highlight text-hover-effect' data-aos="fade-up" data-aos-delay="200">{props.span}</span></h1>
             <p className={`${!props.showimage || isMobile ? 'small-width-description' : ''}`}>
               {props.description}
             </p>

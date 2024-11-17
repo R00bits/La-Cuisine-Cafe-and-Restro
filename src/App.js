@@ -10,6 +10,8 @@ import Kitchen from './Pages/Kitchen';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';  // Adjusted for version 6
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Navbar from './components/Navbar';
+import TopHeader from './components/TopHeader';
 
 
 function App() {
@@ -20,7 +22,8 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        
+        <TopHeader/>
+         <Navbar />
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About />} />
